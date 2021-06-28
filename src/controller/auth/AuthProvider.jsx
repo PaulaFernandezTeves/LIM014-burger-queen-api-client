@@ -5,7 +5,7 @@ Auth Provider -> suministra el conexto de autentificación a los demás componen
 AuthContext -> sirve para consumer a los componentes que existen en este contexto
 useEffect -> lo usamos para que cada vez que se actualice el  estado de usuario se almacenen los datos en el localstorage */
 
-import { urlApi } from "./url";
+// import { urlApi } from "../../controller/url";
 
 
 export const AuthContext = createContext();

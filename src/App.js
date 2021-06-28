@@ -1,5 +1,5 @@
 
-// import AuthProvider from "./controller/auth/AuthProvider";
+import AuthProvider from "./controller/auth/AuthProvider";
 import AppRouter from "./routers/AppRouter";
 // import Products from "./controller/Products";
 
@@ -8,10 +8,12 @@ function App() {
   return (
 
       <div>
-        <AppRouter />
+    <AppRouter />
         {/* <Products/> */}
-      </AuthProvider>
-
+      <AuthProvider />
+      </div>
+        
+      
    
   );
 }
