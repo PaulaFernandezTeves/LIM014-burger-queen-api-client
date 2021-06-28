@@ -1,6 +1,10 @@
 
 import { useState , useEffect } from "react"
+<<<<<<< HEAD
 import { urlApi } from "../../controller/url"
+=======
+import { urlApi } from "../../services/URL"
+>>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
 import { getProducts } from "../../services/products";
 
 export default function Home() {
@@ -9,7 +13,10 @@ export default function Home() {
     
   const [products, setProducts] = useState()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
     // useEffect, es un hook de react que permite encargarnos del ciclo de vida de react,se le va decir  no trnga dependecias al estar el array vacio y se ejecuta al iniciar la aplicacion por primera y unica vez
      useEffect(() =>{
      getProducts(`${urlApi}/products`

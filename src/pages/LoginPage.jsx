@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+// import { useState, useEffect } from "react"
+
+>>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
 import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../controller/auth/useAuth';
 // import useAuth from '../auth/useAuth';
@@ -24,8 +29,8 @@ export default function LoginPage() {
                 <h1 className="login-form__title">Burguer Queen</h1>
                 <form className="login-form__form" autoComplete="off">
                     <div className="login-form__form__input-group">
-                        <input className="input-default"  type="email" placeholder='Usuario'></input>
-                        <input className="input-default"  type="password" placeholder='Password'></input>
+                        <input className="input-default" type="email" placeholder='Usuario'></input>
+                        <input className="input-default" type="password" placeholder='Password'></input>
                     </div>
 
                     <button className="button-default" onClick={handleLogin}>
@@ -34,6 +39,13 @@ export default function LoginPage() {
 
                 </form>
             </div>
+
+
+
         </section>
     )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012

@@ -1,12 +1,15 @@
+<<<<<<< HEAD
 
+=======
+// import AuthProvider from "./auth/AuthProvider";
+>>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
 import AuthProvider from "./controller/auth/AuthProvider";
 import AppRouter from "./routers/AppRouter";
-// import Products from "./controller/Products";
-
 
 function App() {
   return (
 
+<<<<<<< HEAD
       <div>
     <AppRouter />
         {/* <Products/> */}
@@ -15,6 +18,12 @@ function App() {
         
       
    
+=======
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
+
+>>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
   );
 }
 
