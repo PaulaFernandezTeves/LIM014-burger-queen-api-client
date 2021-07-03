@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 // import { useState, useEffect } from "react"
 
->>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
 import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../controller/auth/useAuth';
 // import useAuth from '../auth/useAuth';
@@ -44,8 +41,4 @@ export default function LoginPage() {
 
         </section>
     )
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012

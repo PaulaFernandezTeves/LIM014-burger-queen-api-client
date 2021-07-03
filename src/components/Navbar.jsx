@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <nav className="navigation">
 
-            <ul className="navigation__list">
+            <ul className="navigation__list ml-auto">
                 {/* Para restringir ⬇ rutas, si el usuario no  esta logeado se muestra lossiguientes elmentos*/}
 
                 {!auth.isLogged() && (

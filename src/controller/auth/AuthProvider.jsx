@@ -4,14 +4,6 @@ import { createContext, useState, useEffect } from "react";
 Auth Provider -> suministra el conexto de autentificación a los demás componentes
 AuthContext -> sirve para consumer a los componentes que existen en este contexto
 useEffect -> lo usamos para que cada vez que se actualice el  estado de usuario se almacenen los datos en el localstorage */
-<<<<<<< HEAD
-
-// import { urlApi } from "../../controller/url";
-
-
-=======
- 
->>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {

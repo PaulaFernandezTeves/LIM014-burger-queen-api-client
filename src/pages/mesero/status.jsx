@@ -1,9 +1,5 @@
 import { useState , useEffect } from "react"
-<<<<<<< HEAD
-import { urlApi } from "../../controller/url"
-=======
 import { urlApi } from "../../services/URL"
->>>>>>> 2eddde0d330a965146001e321e8e626a99f7a012
 
 export default function Status() {
     
