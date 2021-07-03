@@ -24,16 +24,6 @@ body {
 #root {
   height: 100%; }
 
-<<<<<<< HEAD
-/*sass: todo lo que sea un ul y luego un li, se ve afectado - se agrego*/
-ul {
-  list-style: none; }
-  ul li {
-    display: inline-block;
-    padding: 10px; }
-
-=======
->>>>>>> 07081a9c461b59a3af883a00d56d59fd5f4d703d
 .input-default {
   width: 100%;
   padding: 1.2rem 2rem;
@@ -62,12 +52,7 @@ ul {
 
 .page-login {
   background-color: #4C2414;
-<<<<<<< HEAD
-  height: 100vh;
-  /*cambio*/
-=======
   height: 100%;
->>>>>>> 07081a9c461b59a3af883a00d56d59fd5f4d703d
   display: flex;
   justify-content: center;
   padding-top: 8rem; }
@@ -91,26 +76,6 @@ ul {
     .login-form__form__input-group {
       margin-bottom: 2rem; }
 
-<<<<<<< HEAD
-.login-form {
-  width: 100%;
-  max-width: 50rem;
-  background-color: transparent;
-  margin: 2rem 3rem;
-  padding: 2rem;
-  height: min-content; }
-  .login-form__title {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 5.5rem;
-    color: #E08E2F;
-    font-family: "Qwigley", sans-serif; }
-  .login-form__form {
-    display: flex;
-    flex-direction: column; }
-    .login-form__form__input-group {
-      margin-bottom: 2rem; }
-=======
 /*sass: todo lo que sea un ul y luego un li, se ve afectado - se agrego*/
 ul {
   list-style: none; }
@@ -130,4 +95,3 @@ ul {
   height: 5rem; }
   .navigation__list__item {
     font-size: 1.6rem; }
->>>>>>> 07081a9c461b59a3af883a00d56d59fd5f4d703d
