@@ -1,33 +1,33 @@
 export default function Status() {
     return (
-        <div className="page-status">
-            {/* columna izquierda */}
-            <div className="left-box-readyOrders"> 
-                <div className="left-box-readyOrders__title">
-                     <h2 className="box-title">Ordenes listas para Recoger</h2>
-                    <div className="left-box-readyOrders__order">
-                        orden numero xxxx
-                        <button className="btn-order-delivered">Orden entregada</button>
+        <div className="page-process">
+            {/* cuadro de arriba*/}
+            <div className="process-box"> 
+                <div className="process-box__kitchen">
+                     <h1 className="box-kitchen"> Time</h1>
+                    <div className="box-kitchen__order">
+                        <button className="btn-order-inicio">Inicio</button>
+                        <button className="btn-order-listo">Listo</button>
                     </div>
-                    
-                    
+                    <div className="process-historial__horizontal">
+                        <p> Mesera: Carla </p>
+                    </div>
                 </div>
             </div>
 
-             {/* columna derecha*/}
-             <div className="right-box-inProcess"> 
-                <div className="right-box-inProcess__title">
-                    <h2 className="box-title">Ordenes en Proceso</h2>
-                    <div className="right-box-inProcess__order">
-                        <p>#     Products    Precio </p>
+             {/* cuadro de abajo*/}
+             <div className="down-process-box"> 
+                <div className="down-process-box__kitchen">
+                     <h1 className="down-box__kitchen"> Time</h1>
+                    <div className="down-box-kitchen__order">
+                        <button className="down-btn-order-inicio">Inicio</button>
+                        <button className="down-btn-order-listo">Listo</button>
                     </div>
-
-                    
+                    <div className="down-process-historial__horizontal">
+                        <p> Mesera: Carla </p>
+                    </div>
                 </div>
-            </div>
-           
-            
-            
+            </div>           
         </div>
     )
 }
