@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*para importar las carpetas necesitamos primero colocar un @importy dar la ruta ej @import"./abstracts/variables", la primera importancion siempre tiene que ser variables y fuentes , sino no se compila*/
+/*para importar las carpetas necesitamos primero colocar un @import y dar la ruta ej @import"./abstracts/variables", la primera importancion siempre tiene que ser variables y fuentes , sino no se compila*/
 /*se llama a la variable a trvés del simbolo del dolar y se da los valores primarios, secundarios y otros colores, el guión bajo ( _ )es un partials, que es una configuración de sass (modulos)*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Qwigley:regular,bold,italic&subset=latin,latin-ext");
