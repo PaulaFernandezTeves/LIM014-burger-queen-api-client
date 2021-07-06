@@ -1,40 +1,34 @@
-import { useState , useEffect } from "react"
+import { useState, useEffect } from "react"
+
+import { getProducts } from "../../services/products";
+import { urlApi } from "../../services/url";
 
 export default function Home() {
-  
-    const dataProducts = 'http://localhost:5000/products'
-    // obtener los datos de la respuesta y alcenarlo en el estado de la aplicacion setProducts modifca la variable se usa ell hook de react useState cuando se obtengan los resultados se va guardar en la variable products utilizando setProducts
-  const [products, setProducts] = useState()
+    // obtener los datos de la respuesta y alcenarlo en el estado de la aplicacion setProducts modifca la variable se usa el hook de react useState cuando se obtengan los resultados se va guardar en la variable products utilizando setProducts
 
-    // definir funcion se usa Async porque incluye cosas asincronas
-    const fetchApi = async () => {
-        //Respuesta de la funcion fetch a la url(dataProducts) y es un await  porque se debe esperar
-        const response = await fetch(dataProducts)
-        console.log(response)
-
-        //se procesa la respuesta, interpretandola como json
-        const responseJSON = await response.json()
-        setProducts(responseJSON)
-        console.log(responseJSON)
-     }
+    const [products, setProducts] = useState()
 
     // useEffect, es un hook de react que permite encargarnos del ciclo de vida de react,se le va decir  no trnga dependecias al estar el array vacio y se ejecuta al iniciar la aplicacion por primera y unica vez
-     useEffect(() =>{
-     fetchApi()
-     },[])
+    useEffect(() => {
+        getProducts(`${urlApi}/products`
+        ).then(res => {
+            setProducts(res.products)
+        })
+    }, [])
 
 
     return (
         <div>
-            <h1>Home</h1> 
-             <ul>
-                {/* {!products ? 'Cargando ...': 
-                    products.map((products,index) => {
-                    return <li>{products.name} 
-                    </li>
-                })
-                } */}
-            </ul> 
+            <h1>Home</h1>
+            <ul>
+                {/*si no se lee productos se dice que se carga sino se muestra index=indice, para q no salga error se indica eñ key->es un valor unico por cada uno de los componentes que se renderiza */}
+                {!products ? 'Cargando ...' :
+                    products.map((products, index) => {
+                        return <li key={index}>{products.name}
+                        </li>
+                    })
+                }
+            </ul>
 
             <h2>🌊ola o hola 👋≧◉ᴥ◉≦ </h2>
         </div>
