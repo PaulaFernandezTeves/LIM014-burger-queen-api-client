@@ -23,9 +23,6 @@ const Navbar = () => {
     )
 }
 
-<<<<<<< HEAD
-export default Navbar
-=======
 export default Navbar
 
 // import {
@@ -94,4 +91,3 @@ export default Navbar
 // }
 
 // export default Navbar
->>>>>>> 4b3a4bbbe0bcd1db2b3b5002f71aca6e09ed8fe1

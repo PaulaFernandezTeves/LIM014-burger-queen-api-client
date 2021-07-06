@@ -1,6 +1,6 @@
 // const urlApi = 'http://localhost:5000';
 
-const urlApi = 'https://burger-queen-lrc.herokuapp.com';
+const urlApi = 'https://burger-queen-lrc.herokuapp.com/products';
 
 export {
     urlApi,

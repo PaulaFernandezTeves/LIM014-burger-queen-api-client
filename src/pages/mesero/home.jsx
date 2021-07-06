@@ -1,7 +1,7 @@
-import { useState , useEffect } from "react"
+import { useState, useEffect } from "react"
 
 import { getProducts } from "../../services/products";
-import { urlApi } from "../../Url/url";
+import { urlApi } from "../../services/url";
 
 export default function Home() {
     // obtener los datos de la respuesta y alcenarlo en el estado de la aplicacion setProducts modifca la variable se usa el hook de react useState cuando se obtengan los resultados se va guardar en la variable products utilizando setProducts
@@ -15,52 +15,22 @@ export default function Home() {
             setProducts(res.products)
         })
     }, [])
-     
+
+
     return (
-        <div className="page-home">
-            {/* columna izquierda */}
-            <div className="left-column"> 
-                    </div>
-                        <div><button className="button-default">Guardar</button></div>
-                    
-                </div>
-                    <div className="select-area">
-                        
-                         <select className="select-area__select" id="select-category">
-                            <option value="none">--</option>
-                            <option> </option>
-                            <option> </option>
-                        </select> 
-                    </div>
+        <div>
+            <h1>Home</h1>
+            <ul>
+                {/*si no se lee productos se dice que se carga sino se muestra index=indice, para q no salga error se indica eñ key->es un valor unico por cada uno de los componentes que se renderiza */}
+                {!products ? 'Cargando ...' :
+                    products.map((products, index) => {
+                        return <li key={index}>{products.name}
+                        </li>
+                    })
+                }
+            </ul>
 
-                        <div className='page-home__products'>
-                        {!products ? 'Cargando ...': 
-                        products.map((products,index) => {
-                        return <div  className='page-home__products__container' key={index}>{products.name}<ul>S/.{products.price}</ul><img className='page-home__products__img' src={products.image} alt="" />
-                        </div>
-                         })
-                            } 
-                        </div>
-            </div>
-
-             {/* columna derecha*/}
-             <div className="right-column__box-area"> 
-                <div className="right-column__box-area__text-area">
-                    <p>Cliente: </p>
-                    <p>Colaborador:</p>
-                    <p># orders:</p>
-                    <p>Mesa:</p>
-                    <div className="right-column__box-area__header">
-                        <p>#     Products    Precio </p>
-                    </div>
-                    <div>Borrar ezxtso</div>
-
-                    
-                </div>
-            </div>
-           
-            
-            
+            <h2>🌊ola o hola 👋≧◉ᴥ◉≦ </h2>
         </div>
     )
 }
