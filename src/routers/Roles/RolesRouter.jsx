@@ -1,4 +1,3 @@
-
 import {
     Link,
     Switch,
@@ -24,7 +23,7 @@ export default function RolRouter() {
                 </li> */}
                 <li>
                     <Link to={`${url}/mesero`} >
-                       Mesero
+                        Mesero
                     </Link>
                 </li>
                 <li>
@@ -35,12 +34,10 @@ export default function RolRouter() {
             </ul>
             <Switch>
                 <Route exact path="/rol" component={Roles} />
-                
                 <Route path="/rol/mesero" component={MeseroRouter} />
 
                 <Route path="/rol/cocina" component={CocinaRouter} />
 
-                
                 <Route path="*">
                     <Redirect to="/404" />
                 </Route>

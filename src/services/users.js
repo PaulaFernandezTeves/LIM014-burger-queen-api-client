@@ -13,7 +13,7 @@ export const getUser = async () => {
     return dataJSON
 }
 
-export const postUser = async (user) =>{
+export const postUser = async (user) => {
     const response = await fetch(`${urlApi}/users`, {
         method: 'POST',
         body: JSON.stringify(user),
@@ -28,6 +28,7 @@ export const postUser = async (user) =>{
 
     return dataJSON
 }
+<<<<<<< HEAD
 
 
 // export const getUsers = () =>
@@ -105,3 +106,5 @@ export const postUser = async (user) =>{
 //         return new Error('Usuario no encontrado');
 //     }
 // });
+=======
+>>>>>>> 4b3a4bbbe0bcd1db2b3b5002f71aca6e09ed8fe1

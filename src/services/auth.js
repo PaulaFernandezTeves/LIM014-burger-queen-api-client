@@ -1,4 +1,4 @@
-import { urlApi } from "./url";
+import { urlApi } from "../Url/url";
 
 export const postAuth = async (email, password) => {
     const response = await fetch(`${urlApi}/auth`, {

@@ -7,17 +7,17 @@ export default function Trabajadores() {
                     <div>
                         <div>
                             <label htmlFor="">Usuario</label>
-                            <input 
-                            type="email"
-                            name="email"
-                            placeholder="Email" />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email" />
                         </div>
                         <div>
                             <label htmlFor="">Contraseña</label>
-                            <input 
-                            type="password"
-                            name="password"
-                            placeholder="**********" />
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="**********" />
                         </div>
                     </div>
                     <div>

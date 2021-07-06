@@ -25,5 +25,3 @@ export const postProducts = async (url, data) => {
     const responseJSON = await response.json()
     return responseJSON
 }
-
-
