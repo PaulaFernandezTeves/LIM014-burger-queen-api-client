@@ -1,4 +1,4 @@
-const urlApi = 'https://nodejs-bq-api.herokuapp.com';
+const urlApi = 'https://burger-queen-lrc.herokuapp.com/products';
 
 export {
     urlApi,
