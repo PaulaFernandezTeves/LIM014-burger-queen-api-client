@@ -396,3 +396,21 @@ top: 540px;
 background: #299749;
 border-radius: 5px;
 }
+
+.default td{
+  color: #5FB1FD;
+  text-align: center;
+}
+.default th {
+  color: #EBC12B;
+}
+
+td, th {
+  border: 1px solid #CDA434;
+  box-shadow: 0 0 11px #CDA434,
+              0 0 4px #CDA434,
+              0 0 6px #CDA434;
+              text-align: left;
+  padding: 8px;
+  padding: 0 10px 2px;
+}

@@ -17,8 +17,7 @@ export default function HistorialCocina() {
                         <p> Mesera: Carla </p>
                     </div>
                 </div>
-            </div>
-            
+                </div>
 
         {/* cuadro de abajo*/}
 
@@ -29,5 +28,27 @@ export default function HistorialCocina() {
                 </div>
             </div>
         </div>
+
     )
-}
+};
+
+
+{/* <table class="default">
+<tr>
+<th>stats</th>
+<th>per lvl</th>
+<th>lvl 1</th>
+<th>lvl 6</th>
+<th>lvl 12</th>
+<th>lvl 18</th>
+</tr>
+
+<tr>
+<th>hp</th>
+<td>wii</td>
+<td>wii</td>
+<td>wii</td>
+<td>wii</td>
+<td>wii</td>
+</tr>
+</table> */}
