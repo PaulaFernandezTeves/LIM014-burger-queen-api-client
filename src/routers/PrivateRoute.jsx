@@ -1,24 +1,26 @@
-// import { Route,Redirect } from 'react-router-dom';
+import { Route, Redirect, useLocation } from "react-router-dom";
+import useAuth from "../controller/useAuth";
 
-// const user = null;
-// const user = {id:1,username="luis50"};
 
-/* function PrivateRoute({component, ...rest}) {
+export default function PrivateRoute({ component: Component, ...rest }) {
+    const auth = useAuth(); /*retorna lo q se usa en el use Auth */
+    // const location = useLocation(); /** tiene la informacion total de la ruta actual, al hacer la redireccion se ira al login pero en estado le indicaria la ruta anterior*/
+
     return (
-        // <Route exact={props.exact} path={props.path}component={props.component}>
+       
+        <Route {...rest}>
+            {auth.isLogged() ? ( <Component /> ) : (
+                // <Redirect to={{ pathname: "/", state: { from: location } }} />
+                <Redirect to= "/"/>
+            )}
             
-        // </Route>
-        //  <Route {...props}/>
-
-          <Route {...rest} >
-          {user ?
-            (<Component/>)
-            :
-            (<Redirect to="/login"/>)
-        }
-          </Route>
+            {/* si el usuario existe redireccionar */}
+            {/* {auth.isLogged() ? (
+                <Component />
+            ) : (
+                <Redirect to={{ pathname: "/", state: { from: location } }} />
+                // <Redirect to= "/"/>
+            )} */}
+        </Route>
     );
 }
-
-export default PrivateRoute;
-*/
