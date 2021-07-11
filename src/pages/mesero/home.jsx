@@ -63,7 +63,7 @@ export default function Home() {
                     <div className="right-column__box-area__header">
                         <p>#     Products    Precio </p>
                     </div>
-                    <div>Borrar ezxtso</div>
+                    <div>Borrar esto</div>
 
                     
                 </div>
